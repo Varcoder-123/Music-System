@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+
+  <div class="wrapper">
+    <!-- Your content goes here -->
+
+    <form action="">
+      <h1>Login</h1>
+
+      <div class="input-box">
+        <input type="text" placeholder="Username" id="username">
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Password" id="password">
+        <i class='bx bxs-lock-alt'></i>
+      </div>
+
+      <div class="remember-forget">
+        <label>
+          <input type="checkbox">
+          Remember me
+        </label>
+        <a href="#">Forget Password?</a>
+      </div>
+      <button type="submit" class="btn" onclick="func()">Login</button>
+      <div class="register-link">
+        <p>Don't have an account? <a href="#">Register</a></p>
+      </div>
+    </form>
+
+  </div>
+
+  <script >
+    function func() {
+    var email = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    if (email == 'vigneshv1867@gmail.com' && password == 'vignesh') {
+      
+      window.location.href = "main1.html"
+      alert("success full!");
+    }
+    else {
+      alert("wrong password or email");
+    }
+  }
+  </script>
+</body>
+
+</html>
